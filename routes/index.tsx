@@ -1,25 +1,25 @@
-import { useSignal } from "@preact/signals";
-import Counter from "../islands/Counter.tsx";
 
 export default function Home() {
-  const count = useSignal(3);
+  
   return (
-    <div class="px-4 py-8 mx-auto bg-[#86efac]">
-      <div class="max-w-screen-md mx-auto flex flex-col items-center justify-center">
-        <img
-          class="my-6"
-          src="/logo.svg"
-          width="128"
-          height="128"
-          alt="the Fresh logo: a sliced lemon dripping with juice"
-        />
-        <h1 class="text-4xl font-bold">Welcome to Fresh</h1>
-        <p class="my-4">
-          Try updating this message in the
-          <code class="mx-2">./routes/index.tsx</code> file, and refresh.
-        </p>
-        <Counter count={count} />
+    <div class="h-2/3 mx-auto bg-[#7c7dd4] flex justify-center items-center py-7">
+      <div class="flex flex-col text-white bg-[#474885] rounded-lg font-semibold p-5 gap-5">
+
+          <div class='flex flex-row justify-between'>
+            <div>
+            <h1 class="font-bold text-6xl">hi</h1>
+            <h3 class="text-3xl">I'm Connor</h3>
+          </div>
+          <div class=''>
+            <div class='h-24 w-24 bg-slate-800 rounded-full inline-block'></div>
+          </div>
+        </div>
+        
+        
+        <p>An upcoming Computer Science and Engineering Student studying at _____</p>
       </div>
+        
+      
     </div>
   );
 }
