@@ -21,19 +21,43 @@ export default function Home() {
         
         <div class=" text-white bg-[#474885] rounded-lg font-semibold p-5 gap-5 w-4/12
         text-center flex flex-col gap2">
-         <h1 class="font-bold text-2xl "> Technologies</h1>
-        <div class='w-full flex flex-row'>
-          <ul class='flex flex-row items-center'>
-            <li class='flex flex-row items-center'>
+         <h1 class="font-bold text-xl "> Technologies</h1>
+        <div class='w-full flex flex-col gap-4'>
+
+          <ul class='flex flex-row items-center justify-between w-full text-lg'>
+            <li class='flex flex-row items-center gap-4'>
             <img src="/logo.svg" width="48" height="48" alt="the Fresh by deno logo"/>
             <p>Fresh</p>
             </li>
-            
-            <li>
 
+            <li class='flex flex-row items-center gap-4'>
+            <img src="/typescript-logo-svgrepo-com.svg" width="48" height="48" alt="the typescript logo" 
+            class='rounded-sm'/>
+            <p>TypeScript</p>
             </li>
-            <li>
 
+            <li class='flex flex-row items-center gap-4'>
+            <img src="\react-javascript-js-framework-facebook-svgrepo-com.svg" width="48" height="48" alt="the react logo"/>
+            <p>React</p>
+            </li>
+
+          </ul>
+
+          <ul class='flex flex-row items-center justify-between w-full text-lg'>
+            <li class='flex flex-row items-center gap-4'>
+            <img src="/logo.svg" width="48" height="48" alt="the Fresh by deno logo"/>
+            <p>Fresh</p>
+            </li>
+
+            <li class='flex flex-row items-center gap-4'>
+            <img src="/typescript-logo-svgrepo-com.svg" width="48" height="48" alt="the typescript logo" 
+            class='rounded-sm'/>
+            <p>TypeScript</p>
+            </li>
+
+            <li class='flex flex-row items-center gap-4'>
+            <img src="\react-javascript-js-framework-facebook-svgrepo-com.svg" width="48" height="48" alt="the react logo"/>
+            <p>React</p>
             </li>
 
           </ul>
