@@ -2,9 +2,11 @@
 export default function Home() {
   
   return (
-    <div class="h-2/3 mx-auto bg-[#7c7dd4] flex flex-col justify-center items-center py-7 gap-6">
-      <div class="flex flex-col text-white bg-[#474885] rounded-lg font-semibold p-5 gap-5 w-4/12">
+    <div class="h-screen mx-auto bg-[#7c7dd4] flex flex-col justify-center items-center py-7 gap-6">
 
+      <div class="flex flex-col text-white bg-[#474885] rounded-lg font-semibold px-5 gap-5 
+      w-6/12  h-[45%]">
+        
           <div class='flex flex-row justify-between'>
             <div>
             <h1 class="font-bold text-6xl">hi</h1>
@@ -17,50 +19,45 @@ export default function Home() {
         
         
         <p>An upcoming Computer Science and Engineering Student studying at _____</p>
+        
       </div>
         
         <div class=" text-white bg-[#474885] rounded-lg font-semibold p-5 gap-5 w-4/12
-        text-center flex flex-col gap2">
+        text-center flex flex-col"> 
          <h1 class="font-bold text-xl "> Technologies</h1>
-        <div class='w-full flex flex-col gap-4'>
+        <div class='w-full grid grid-cols-3 gap-x-8 gap-y-4 justify-items-center text-lg'>
 
-          <ul class='flex flex-row items-center justify-between w-full text-lg'>
-            <li class='flex flex-row items-center gap-4'>
+            <li class='flex flex-row items-center gap-2'> 
             <img src="/logo.svg" width="48" height="48" alt="the Fresh by deno logo"/>
             <p>Fresh</p>
             </li>
 
-            <li class='flex flex-row items-center gap-4'>
-            <img src="/typescript-logo-svgrepo-com.svg" width="48" height="48" alt="the typescript logo" 
+            <li class='flex flex-row items-center gap-2'>
+            <img src="/typescript-logo-svgrepo-com.svg" width="48" height="48" alt="the typescript logo"
             class='rounded-sm'/>
             <p>TypeScript</p>
             </li>
 
-            <li class='flex flex-row items-center gap-4'>
-            <img src="\react-javascript-js-framework-facebook-svgrepo-com.svg" width="48" height="48" alt="the react logo"/>
+            <li class='flex flex-row items-center gap-2'>
+            <img src="/react-javascript-js-framework-facebook-svgrepo-com.svg" width="48" height="48" alt="the react logo"/>
             <p>React</p>
             </li>
 
-          </ul>
-
-          <ul class='flex flex-row items-center justify-between w-full text-lg'>
-            <li class='flex flex-row items-center gap-4'>
-            <img src="/logo.svg" width="48" height="48" alt="the Fresh by deno logo"/>
-            <p>Fresh</p>
+            <li class='flex flex-row items-center gap-2'>
+            <img src="/nextjs-icon-svgrepo-com.svg" width="48" height="48" alt="the Next JS"/>
+            <p>Next JS</p>
             </li>
 
-            <li class='flex flex-row items-center gap-4'>
-            <img src="/typescript-logo-svgrepo-com.svg" width="48" height="48" alt="the typescript logo" 
+            <li class='flex flex-row items-center gap-2'>
+            <img src="/nodejs-icon-svgrepo-com.svg" width="48" height="48" alt="the Node JS logo"
             class='rounded-sm'/>
-            <p>TypeScript</p>
+            <p>Node JS</p>
             </li>
 
-            <li class='flex flex-row items-center gap-4'>
-            <img src="\react-javascript-js-framework-facebook-svgrepo-com.svg" width="48" height="48" alt="the react logo"/>
-            <p>React</p>
+            <li class='flex flex-row items-center gap-2'>
+            <img src="/sql-database-generic-svgrepo-com.svg" width="48" height="48" alt="A SQL Logo"/>
+            <p>SQL</p>
             </li>
-
-          </ul>
         </div>
       </div>
     </div>
