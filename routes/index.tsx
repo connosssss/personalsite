@@ -1,9 +1,10 @@
+import Navbar from "../components/navbar.tsx";
 
 export default function Home() {
   
   return (
     <div class="h-screen mx-auto bg-[#7c7dd4] flex flex-col justify-center items-center py-7 gap-6">
-
+      <Navbar/>
       <div class=" text-white bg-[#474885] rounded-lg font-semibold  
       w-5/12  h-[45%] flex items-center justify-center">
 
@@ -18,9 +19,10 @@ export default function Home() {
           </div>
         </div>
         
-        
+        <div>
         <p>An upcoming Computer Science and Engineering Student studying at _____</p>
-
+        <p>More tk...</p>
+        </div>
         <a href="https://github.com/retekant" class='text-white' >
          <img src="/github.svg" alt="GitHub Logo" width="32" height="32" class="invert" />
         </a>
