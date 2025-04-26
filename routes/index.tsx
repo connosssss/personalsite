@@ -1,8 +1,10 @@
 import Navbar from "../components/navbar.tsx";
+import Techstack from "../components/techstack.tsx";
 
 export default function Home() {
   
   return (
+    <>
     <div class="h-screen mx-auto bg-[#7c7dd4] flex flex-col justify-center items-center py-7 gap-6">
       <Navbar/>
       <div class=" text-white bg-[#474885] rounded-lg font-semibold  
@@ -24,7 +26,7 @@ export default function Home() {
         <p>More tk...</p>
         </div>
         <a href="https://github.com/retekant" class='text-white' >
-         <img src="/github.svg" alt="GitHub Logo" width="32" height="32" class="invert" />
+         <img src="/github.svg" alt="GitHub Logo" width="32" height="32" class="invert transition-transform duration-300 hover:scale-125" />
         </a>
 
 
@@ -32,45 +34,35 @@ export default function Home() {
 
 
       </div>
+
+
+
         
-        <div class=" text-white bg-[#474885] rounded-lg font-semibold p-8 gap-5 w-4/12
-        text-center flex flex-col"> 
-         <h1 class="font-bold text-xl "> Technologies</h1>
-        <div class='w-full grid grid-cols-3 gap-x-8 gap-y-4 justify-items-center text-lg'>
+        
+    </div>
+    {/*PROJECTS  */ }
+    <div class='h-96 w-full bg-gradient-to-b from-[#7c7dd4]  to-[#708995]'/>
 
-            <li class='flex flex-row items-center gap-2'> 
-            <img src="/logo.svg" width="48" height="48" alt="the Fresh by deno logo"/>
-            <p>Fresh</p>
-            </li>
+    
+    <div class='h-52 w-full bg-[#708995]'/>
 
-            <li class='flex flex-row items-center gap-2'>
-            <img src="/typescript-logo-svgrepo-com.svg" width="48" height="48" alt="the typescript logo"
-            class='rounded-sm'/>
-            <p>TypeScript</p>
-            </li>
+   
 
-            <li class='flex flex-row items-center gap-2'>
-            <img src="/react-javascript-js-framework-facebook-svgrepo-com.svg" width="48" height="48" alt="the react logo"/>
-            <p>React</p>
-            </li>
-
-            <li class='flex flex-row items-center gap-2'>
-            <img src="/nextjs-icon-svgrepo-com.svg" width="48" height="48" alt="the Next JS"/>
-            <p>Next JS</p>
-            </li>
-
-            <li class='flex flex-row items-center gap-2'>
-            <img src="/nodejs-icon-svgrepo-com.svg" width="48" height="48" alt="the Node JS logo"
-            class='rounded-sm'/>
-            <p>Node JS</p>
-            </li>
-
-            <li class='flex flex-row items-center gap-2'>
-            <img src="/sql-database-generic-svgrepo-com.svg" width="48" height="48" alt="A SQL Logo"/>
-            <p>SQL</p>
-            </li>
+    <div class="h-[500px] bg-gradient-to-b from-[#708995]  to-[#905368] flex flex-row-2 ">
+      <div class='h-full w-8/12 flex items-center justify-center'> 
+      <img src='bullets-betterfy.png' alt="betterfy SS" class="h-[500px] w-auto rounded-md shadow-xl"/>
+      </div>
+      <div class='h-full w-4/12 text-white'>
+        <div class='w-3/4 flex flex-col gap-8 justify-center items-start h-full'>
+        <h1 class='text-5xl font-bold'> betterfy </h1>
+        <p class='text-xl'>betterfy is a web app that uses the Spotify API to make a more customizable and better looking UI for the web player. It was built using Next JS, Tailwind CSS, and Node JS</p>
         </div>
       </div>
     </div>
-  );
+
+    <div class='h-52 w-full bg-[#905368]  '/>
+
+    
+
+    </>);
 }
