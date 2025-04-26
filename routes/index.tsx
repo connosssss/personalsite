@@ -5,7 +5,7 @@ export default function Home() {
   
   return (
     <>
-    <div class="h-screen mx-auto bg-[#7c7dd4] flex flex-col justify-center items-center py-7 gap-6">
+    <div id="top" class="h-screen mx-auto bg-[#7c7dd4] flex flex-col justify-center items-center py-7 gap-6">
       <Navbar/>
       <div class=" text-white bg-[#474885] rounded-lg font-semibold  
       w-5/12  h-[45%] flex items-center justify-center">
@@ -25,7 +25,7 @@ export default function Home() {
         <p>An upcoming Computer Science and Engineering Student studying at _____</p>
         <p>More tk...</p>
         </div>
-        <a href="https://github.com/retekant" class='text-white' >
+        <a href="https://github.com/retekant" target="_blank" class='text-white' >
          <img src="/github.svg" alt="GitHub Logo" width="32" height="32" class="invert transition-transform duration-300 hover:scale-125" />
         </a>
 
@@ -35,27 +35,32 @@ export default function Home() {
 
       </div>
 
-
+      <Techstack/>
 
         
         
     </div>
     {/*PROJECTS  */ }
-    <div class='h-96 w-full bg-gradient-to-b from-[#7c7dd4]  to-[#708995]'/>
+    <div class='h-96 w-full bg-gradient-to-b from-[#7c7dd4]  to-[#708995] ' />
 
-    
-    <div class='h-52 w-full bg-[#708995]'/>
 
-   
+    <div class='h-52 w-full bg-[#708995] text-center text-6xl font-semibold flex justify-center text-white'>
+      <h1> Projects</h1>
+      <h1></h1>
+    </div>
 
-    <div class="h-[500px] bg-gradient-to-b from-[#708995]  to-[#905368] flex flex-row-2 ">
+    <div class="h-[500px] bg-gradient-to-b from-[#708995]  to-[#905368] flex flex-row-2 " id="projects" >
       <div class='h-full w-8/12 flex items-center justify-center'> 
       <img src='bullets-betterfy.png' alt="betterfy SS" class="h-[500px] w-auto rounded-md shadow-xl"/>
       </div>
       <div class='h-full w-4/12 text-white'>
         <div class='w-3/4 flex flex-col gap-8 justify-center items-start h-full'>
         <h1 class='text-5xl font-bold'> betterfy </h1>
-        <p class='text-xl'>betterfy is a web app that uses the Spotify API to make a more customizable and better looking UI for the web player. It was built using Next JS, Tailwind CSS, and Node JS</p>
+        <p class='text-xl'>betterfy is a web app that uses the Spotify API to make a more customizable and better looking UI for the web player. 
+          It was built using Next JS, Tailwind CSS, and Node JS</p>
+          <a href="https://github.com/retekant/betterfy" target="_blank" class='' >
+            <img src="/github.svg" alt="GitHub Logo" width="32" height="32" class="invert transition-transform duration-300 hover:scale-125" />
+        </a>
         </div>
       </div>
     </div>
