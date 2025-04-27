@@ -45,11 +45,10 @@ export default function Home() {
 
 
     <div class='h-52 w-full bg-[#708995] text-center text-6xl font-semibold flex justify-center text-white'>
-      <h1> Projects</h1>
-      <h1></h1>
+      <h1  id="projects"> Projects</h1>
     </div>
 
-    <div class="h-[500px] bg-gradient-to-b from-[#708995]  to-[#905368] flex flex-row-2 " id="projects" >
+    <div class="h-[500px] bg-gradient-to-b from-[#708995]  to-[#905368] flex flex-row-2 " >
       <div class='h-full w-8/12 flex items-center justify-center'> 
       <img src='bullets-betterfy.png' alt="betterfy SS" class="h-[500px] w-auto rounded-md shadow-xl"/>
       </div>
@@ -66,8 +65,24 @@ export default function Home() {
     </div>
 
     <div class='h-52 w-full bg-[#905368]  '/>
-
+    <div class='h-96 w-full bg-gradient-to-b from-[#905368]  to-gray-800  '/>
     
+    <div class="h-[500px] bg-gray-800 flex flex-row-2 " >
+      <div class='h-full w-8/12 flex items-center justify-center'> 
+      <img src='noteable.png' alt="betterfy SS" class="h-[500px] w-auto rounded-md shadow-2xl"/>
+      </div>
+      <div class='h-full w-4/12 text-white'>
+        <div class='w-3/4 flex flex-col gap-8 justify-center items-start h-full'>
+        <h1 class='text-5xl font-bold'> noteable </h1>
+        <p class='text-xl'>noteable is a Markdown note editor that allows users to save notes locally to the browser. It was made using Fresh by Deno and Tailwind CSS</p>
+          <a href="https://github.com/retekant/noteable" target="_blank" class='' >
+            <img src="/github.svg" alt="GitHub Logo" width="32" height="32" class="invert transition-transform duration-300 hover:scale-125" />
+        </a>
+        </div>
+      </div>
+    </div>
+
+    <div class='h-52 w-full bg-gray-800  '/>
 
     </>);
 }
