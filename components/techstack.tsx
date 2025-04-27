@@ -10,7 +10,8 @@ export default function Techstack() {
               rounded shadow-md z-10 bg-opacity-35 w-40"> 
               Fresh by Deno
                 </div>
-            <img src="/logo.svg" width="48" height="48" alt="the Fresh by deno logo"/>
+            <img src="/logo.svg" width="48" height="48" alt="the Fresh by deno logo"
+            class=' hover:scale-125 transition-transfrom duration-300'/>
             
             </li>
 
@@ -20,7 +21,7 @@ export default function Techstack() {
                 TypeScript
                 </div>
             <img src="/typescript-logo-svgrepo-com.svg" width="48" height="48" alt="the typescript logo"
-            class='rounded-sm'/>
+            class=' hover:scale-125 transition-transfrom duration-300'/>
             
             </li>
 
@@ -29,7 +30,8 @@ export default function Techstack() {
               rounded shadow-md z-10 bg-opacity-35 ">
                 React
             </div>
-            <img src="/react-javascript-js-framework-facebook-svgrepo-com.svg" width="60" height="60" alt="the react logo"/>
+            <img src="/react-javascript-js-framework-facebook-svgrepo-com.svg" width="60" height="60" alt="the react logo"
+            class='hover:scale-125 transition-transfrom duration-300'/>
           
             </li>
 
@@ -38,7 +40,8 @@ export default function Techstack() {
               rounded shadow-md z-10 bg-opacity-35 w-28">
                 Next JS
                 </div>
-            <img src="/nextjs-icon-svgrepo-com.svg" width="48" height="48" alt="the Next JS"/>
+            <img src="/nextjs-icon-svgrepo-com.svg" width="48" height="48" alt="the Next JS"
+            class='rounded-sm hover:scale-125 transition-transfrom duration-300'/>
             
             </li>
 
@@ -48,7 +51,7 @@ export default function Techstack() {
                 Node JS
             </div>
             <img src="/nodejs-icon-svgrepo-com.svg" width="48" height="48" alt="the Node JS logo"
-            class='rounded-sm'/>
+            class='rounded-sm hover:scale-125 transition-transfrom duration-300'/>
           
             </li>
 
@@ -58,7 +61,7 @@ export default function Techstack() {
                 Tailwind CSS
               </div>
             <img src="/tailwindcss.svg" width="48" height="48" alt="The Tailwindcss Logo"
-              class='invert'/>
+              class='invert hover:scale-125 transition-transfrom duration-300'/>
             
             </li>
         </div>
