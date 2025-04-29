@@ -80,6 +80,7 @@ export default function Home() {
       imageAlt="noteable screenshot"
       githubLink="https://github.com/retekant/noteable"
       bgColor="#1f2937"
+      siteLink="https://noteable.deno.dev"
     />
     
 
@@ -93,6 +94,7 @@ export default function Home() {
       imageAlt="Clockwise screenshot"
       githubLink="https://github.com/retekant/clockwise"
       bgColor="#d35b5b"
+      siteLink="https://clockwise.deno.dev"
     />
 
     

@@ -7,11 +7,12 @@ interface ProjectCardProps {
   imageAlt: string;
   githubLink: string;
   bgColor: string;
+  siteLink: string;
 }
 
 export default function ProjectCard(props: ProjectCardProps): JSX.Element {
 
-  const { title, description, imageSrc, imageAlt, githubLink, bgColor } = props;
+  const { title, description, imageSrc, imageAlt, githubLink, bgColor, siteLink } = props;
   return (
     <div class="h-screen flex flex-row-2" style={{ backgroundColor: bgColor }}>
       <div class='h-full w-8/12 flex items-center justify-center'> 
@@ -21,9 +22,14 @@ export default function ProjectCard(props: ProjectCardProps): JSX.Element {
         <div class='w-3/4 flex flex-col gap-8 justify-center items-start h-full'>
           <h1 class='text-5xl font-bold'>{title}</h1>
           <p class='text-xl'>{description}</p>
-          <a href={githubLink} target="_blank" class=''>
-            <img src="/github.svg" alt="GitHub Logo" width="32" height="32" class="invert transition-transform duration-300 hover:scale-125" />
-          </a>
+          <div class='flex flex-row gap-5'>
+            <a href={githubLink} target="_blank" class=''>
+              <img src="/github.svg" alt="GitHub Logo" width="32" height="32" class="invert transition-transform duration-300 hover:scale-125" />
+            </a>
+            <a href={siteLink} target="_blank" class='' >
+              <img src="/link-svgrepo-com.svg" alt="A Link icon" width="32" height="32" class="invert transition-transform duration-300 hover:scale-125" />
+            </a>
+          </div>
         </div>
       </div>
     </div>
