@@ -12,7 +12,7 @@ export default function Home() {
       w-5/12  h-[45%] flex items-center justify-center">
 
         <div class='flex flex-col p-8 gap-5 '>
-        <div class='flex flex-row justify-between'>
+        <div class='flex flex-row justify-between gap-4'>
             <div>
             <h1 class="font-bold text-6xl">hi</h1>
             <h3 class="text-3xl">I'm Connor</h3>
@@ -26,9 +26,14 @@ export default function Home() {
         <p>An upcoming Computer Science and Engineering Student studying at _____</p>
         <p>More tk...</p>
         </div>
-        <a href="https://github.com/retekant" target="_blank" class='text-white' >
-         <img src="/github.svg" alt="GitHub Logo" width="32" height="32" class="invert transition-transform duration-300 hover:scale-125" />
-        </a>
+        <div class='flex flex-row gap-4 w-full'>
+            <a href="https://github.com/retekant" target="_blank" class='text-white' >
+              <img src="/github.svg" alt="GitHub Logo" width="32" height="32" class="invert transition-transform duration-300 hover:scale-125" />
+            </a>
+            <a href="https://www.linkedin.com/in/connor-griffin-a5174724b/" target="_blank" class='text-white' >
+              <img src="iconmonstr-linkedin-3.svg" alt="GitHub Logo" width="32" height="32" class="invert transition-transform duration-300 hover:scale-125" />
+            </a>
+        </div>
 
 
         </div>
