@@ -16,7 +16,7 @@ export default function Techstack() {
             </li>
 
             <li class='flex flex-row items-center gap-2 group relative justify-center'>
-            <div class="absolute bottom-full mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black text-white p-1 
+            <div class=" px-4 absolute bottom-full mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black text-white p-1 
               rounded shadow-md z-10 bg-opacity-35 ">
                 TypeScript
                 </div>
@@ -26,7 +26,7 @@ export default function Techstack() {
             </li>
 
             <li class='flex flex-row items-center gap-2 group relative  justify-center'>
-            <div class="absolute bottom-full mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black text-white p-1 
+            <div class=" px-4 absolute bottom-full mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black text-white p-1 
               rounded shadow-md z-10 bg-opacity-35 ">
                 React
             </div>
@@ -56,7 +56,7 @@ export default function Techstack() {
             </li>
 
             <li class='flex flex-row items-center gap-2 group relative justify-center'>
-              <div class="absolute bottom-full mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black text-white p-1 
+              <div class=" px-4 absolute bottom-full mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black text-white p-1 
               rounded shadow-md z-10 bg-opacity-35 w-28">
                 Tailwind CSS
               </div>
