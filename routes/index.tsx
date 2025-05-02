@@ -26,12 +26,17 @@ export default function Home() {
         <p>An upcoming Computer Science and Engineering Student studying at _____</p>
         <p>More tk...</p>
         </div>
-        <div class='flex flex-row gap-4 w-full'>
+        <div class='flex flex-row gap-4 w-full items-center'>
             <a href="https://github.com/retekant" target="_blank" class='text-white' >
               <img src="/github.svg" alt="GitHub Logo" width="32" height="32" class="invert transition-transform duration-300 hover:scale-125" />
             </a>
             <a href="https://www.linkedin.com/in/connor-griffin-a5174724b/" target="_blank" class='text-white' >
               <img src="iconmonstr-linkedin-3.svg" alt="GitHub Logo" width="32" height="32" class="invert transition-transform duration-300 hover:scale-125" />
+            </a>
+            <a href="" target="_blank" class='text-white flex flex-row group gap-4' >
+              <img src="maildotru.svg" alt="GitHub Logo" width="32" height="32" class="invert transition-transform duration-300 hover:scale-125" />
+              <p class='opacity-0 transform transform-origin-left transition-all
+               duration-300 ease-out group-hover:opacity-100'>retekant@gmail.com</p>
             </a>
         </div>
 
