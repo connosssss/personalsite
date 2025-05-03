@@ -23,8 +23,8 @@ export default function Home() {
         </div>
         
         <div>
-        <p>An upcoming Computer Science and Engineering Student studying at _____</p>
-        <p>More tk...</p>
+        <p>An upcoming Computer Science and Engineering Student studying at UCI</p>
+        
         </div>
         <div class='flex flex-row gap-4 w-full items-center'>
             <a href="https://github.com/retekant" target="_blank" class='text-white' >
