@@ -78,15 +78,7 @@ export default function Home() {
     <div class='h-52 w-full bg-[#905368]  '/>
     <div class='h-96 w-full bg-gradient-to-b from-[#905368]  to-gray-800  '/>
     
-    <Project 
-      title="noteable"
-      description="noteable is a Markdown note editor that allows users to save notes locally to the browser. It was made using Fresh by Deno and Tailwind CSS"
-      imageSrc="noteable.png"
-      imageAlt="noteable screenshot"
-      githubLink="https://github.com/retekant/noteable"
-      bgColor="#1f2937"
-      siteLink="https://noteable.deno.dev"
-    />
+    
     
 
     <div class='h-96 w-full bg-gradient-to-b from-gray-800  to-[#d35b5b]  '/>
@@ -101,8 +93,18 @@ export default function Home() {
       bgColor="#d35b5b"
       siteLink="https://clockwise.deno.dev"
     />
-
     
+    <div class='h-96 w-full bg-gradient-to-b from-[#d35b5b]  to-slate-700  '/>
+
+    <Project 
+      title="noteable"
+      description="noteable is a Markdown note editor that allows users to save notes locally to the browser. It was made using Fresh by Deno and Tailwind CSS"
+      imageSrc="noteable.png"
+      imageAlt="noteable screenshot"
+      githubLink="https://github.com/retekant/noteable"
+      bgColor="#334155"
+      siteLink="https://noteable.deno.dev"
+    />
 
     </>);
 }

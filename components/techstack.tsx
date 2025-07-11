@@ -15,15 +15,7 @@ export default function Techstack() {
             
             </li>
 
-            <li class='flex flex-row items-center gap-2 group relative justify-center'>
-            <div class=" px-4 absolute bottom-full mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black text-white p-1 
-              rounded shadow-md z-10 bg-opacity-35 ">
-                TypeScript
-                </div>
-            <img src="/typescript-logo-svgrepo-com.svg" width="48" height="48" alt="the typescript logo"
-            class=' hover:scale-125 transition-transfrom duration-300'/>
             
-            </li>
 
             <li class='flex flex-row items-center gap-2 group relative  justify-center'>
             <div class=" px-4 absolute bottom-full mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black text-white p-1 
@@ -42,6 +34,16 @@ export default function Techstack() {
                 </div>
             <img src="/nextjs-icon-svgrepo-com.svg" width="48" height="48" alt="the Next JS"
             class='rounded-sm hover:scale-125 transition-transfrom duration-300'/>
+            
+            </li>
+            
+            <li class='flex flex-row items-center gap-2 group relative justify-center'>
+            <div class=" px-4 absolute bottom-full mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black text-white p-1 
+              rounded shadow-md z-10 bg-opacity-35 ">
+                Express JS
+                </div>
+            <img src="/Express.svg" width="48" height="48" alt="the typescript logo"
+            class=' hover:scale-125 transition-transfrom duration-300'/>
             
             </li>
 
