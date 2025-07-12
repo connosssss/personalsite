@@ -1,9 +1,30 @@
 import Navbar from "../components/navbar.tsx";
 import Techstack from "../components/techstack.tsx";
 import Project from "../components/project.tsx";
+import { useState } from "preact/hooks";
 
 export default function Home() {
   
+  //need to put img gallery into an island
+  const [trackrImg, settrackrImg] = useState([0, 1, 2]); 
+
+
+  const changeImg = (getImg, setImg, directionL) => {
+    const temp = getImg;
+    
+    if(directionL){
+      const last = temp.pop();
+      temp.unshift(last);
+      setImg(temp);
+    }
+    else{
+      const first = temp.shift();
+      temp.push(first);
+      setImg(temp);
+    }
+    
+  }
+
   return (
     <>
     <div id="top" class="h-screen mx-auto bg-[#7c7dd4] flex flex-col justify-center items-center py-7 gap-6">
@@ -80,7 +101,7 @@ export default function Home() {
     
     <div class=" bg-gray-900 flex flex-row-2 py-52" >
 
-      <div class='h-full w-8/12 flex items-center justify-center'> 
+      <div class='h-full w-8/12 flex items-center justify-center flex-col'> 
         <div class="relative h-[500px] w-[800px] flex items-center justify-center">
           
           <img 
@@ -102,6 +123,15 @@ export default function Home() {
             transform hover:z-10 hover:scale-110"
           />
 
+        </div>
+
+        <div>
+          <div class='w-10 h-5 bg-white/50' onClick={() => changeImg(trackrImg, settrackrImg, false)}>
+
+          </div>
+          <div>
+            
+          </div>
         </div>
       </div>
       <div class='h-full w-4/12 text-white'>
