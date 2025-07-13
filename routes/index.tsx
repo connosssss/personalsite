@@ -81,14 +81,19 @@ export default function Home() {
     <div class=" bg-gray-900 flex flex-row-2 py-52" >
       <PhotoGallery />
       <div class='h-full w-4/12 text-white'>
-        <div class='w-3/4 flex flex-col gap-8 justify-center items-start h-full'>
+        <div class='w-3/4 flex flex-col gap-8 justify-center items-start h-full z-30'>
         <h1 class='text-5xl font-bold'> trackr </h1>
-        <p class='text-xl'>trackr is a simple time tracker meant at giving users full access to their data, an abundance of analytics, and making it open-source, allowing
+        <p class='text-xl z-40'>trackr is a simple time tracker meant at giving users full access to their data, an abundance of analytics, and making it open-source, allowing
           for people to change whatever they would like. 
           It was built using Next JS, Tailwind CSS, and was deployed on Vercel</p>
+          <div class='flex flex-row gap-5'>
           <a href="https://github.com/retekant/betterfy" target="_blank" class='' >
             <img src="/github.svg" alt="GitHub Logo" width="32" height="32" class="invert transition-transform duration-300 hover:scale-125" />
         </a>
+        <a href="https://trackr-nu.vercel.app" target="_blank" class='' >
+              <img src="/link-svgrepo-com.svg" alt="A Link icon" width="32" height="32" class="invert transition-transform duration-300 hover:scale-125" />
+            </a>
+          </div>
         </div>
       </div>
     </div>
