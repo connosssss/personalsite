@@ -1,30 +1,9 @@
 import Navbar from "../components/navbar.tsx";
 import Techstack from "../components/techstack.tsx";
 import Project from "../components/project.tsx";
-import { useState } from "preact/hooks";
+import PhotoGallery from "../islands/photoGallery.tsx";
 
 export default function Home() {
-  
-  //need to put img gallery into an island
-  const [trackrImg, settrackrImg] = useState([0, 1, 2]); 
-
-
-  const changeImg = (getImg, setImg, directionL) => {
-    const temp = getImg;
-    
-    if(directionL){
-      const last = temp.pop();
-      temp.unshift(last);
-      setImg(temp);
-    }
-    else{
-      const first = temp.shift();
-      temp.push(first);
-      setImg(temp);
-    }
-    
-  }
-
   return (
     <>
     <div id="top" class="h-screen mx-auto bg-[#7c7dd4] flex flex-col justify-center items-center py-7 gap-6">
@@ -100,40 +79,7 @@ export default function Home() {
     <div class='h-96 w-full bg-gradient-to-b from-[#905368]  to-gray-900  '/>
     
     <div class=" bg-gray-900 flex flex-row-2 py-52" >
-
-      <div class='h-full w-8/12 flex items-center justify-center flex-col'> 
-        <div class="relative h-[500px] w-[800px] flex items-center justify-center">
-          
-          <img 
-            src='/trackr3.png' alt="trackr ss 1" 
-            class="absolute h-[450px] w-auto rounded-md shadow-xl transition-all duration-300 
-            transform translate-x-40 rotate-12 hover:z-10 hover:scale-130 hover:!rotate-0 hover:!translate-x-0"
-          />
-          
-
-          <img 
-            src='/trackr2.png' alt="trackr ss 2" 
-            class="absolute h-[450px] w-auto rounded-md shadow-xl transition-all duration-300 
-            transform translate-x-20 rotate-6 hover:z-10 hover:scale-110 hover:!rotate-0 hover:!translate-x-0"
-          />
-
-          <img 
-            src='/trackr1.png' alt="trackr ss 3" 
-            class="absolute h-[450px] w-auto rounded-md shadow-xl transition-all duration-300 
-            transform hover:z-10 hover:scale-110"
-          />
-
-        </div>
-
-        <div>
-          <div class='w-10 h-5 bg-white/50' onClick={() => changeImg(trackrImg, settrackrImg, false)}>
-
-          </div>
-          <div>
-            
-          </div>
-        </div>
-      </div>
+      <PhotoGallery />
       <div class='h-full w-4/12 text-white'>
         <div class='w-3/4 flex flex-col gap-8 justify-center items-start h-full'>
         <h1 class='text-5xl font-bold'> trackr </h1>
