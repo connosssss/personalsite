@@ -39,7 +39,7 @@ export default function Techstack() {
             
             <li class='flex flex-row items-center gap-2 group relative justify-center'>
             <div class=" px-4 absolute bottom-full mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black text-white p-1 
-              rounded shadow-md z-10 bg-opacity-35 ">
+              rounded shadow-md z-10 min-w-36 bg-opacity-35 ">
                 Express JS
                 </div>
             <img src="/Express.svg" width="48" height="48" alt="the typescript logo"

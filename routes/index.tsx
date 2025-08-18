@@ -18,7 +18,10 @@ export default function Home() {
             <h3 class="text-3xl">I'm Connor</h3>
           </div>
           <div class=''>
-            <div class='h-24 w-24 bg-slate-800 rounded-full inline-block'></div>
+            <div class='h-24 w-24 bg-slate-800 rounded-full inline-block overflow-hidden'>
+              <img src="/asdf.png"  alt="the react logo"
+            class='w-full h-full object-cover'/>
+            </div>
           </div>
         </div>
         
