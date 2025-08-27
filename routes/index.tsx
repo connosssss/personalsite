@@ -3,6 +3,7 @@ import Techstack from "../components/techstack.tsx";
 import Project from "../components/project.tsx";
 import PhotoGallery from "../islands/photoGallery.tsx";
 
+//
 export default function Home() {
   return (
     <>
