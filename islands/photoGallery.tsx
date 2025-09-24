@@ -27,7 +27,7 @@ export default function PhotoGallery() {
 
   return (
     <div class='h-full w-8/12 flex items-center justify-center flex-col'>
-      <div class="relative h-[500px] w-[800px] flex items-center justify-center">
+      <div class="relative h-[450px] w-[720px] flex items-center justify-center">
         <img 
           src={images[trackrImg[2]]} alt="trackr ss 1" 
           class="absolute h-[450px] w-auto rounded-md shadow-xl transition-all duration-300 

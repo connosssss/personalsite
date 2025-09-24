@@ -82,7 +82,7 @@ export default function Home() {
     <div class='h-52 w-full bg-[#905368]  '/>
     <div class='h-96 w-full bg-gradient-to-b from-[#905368]  to-[#141318]  '/>
     
-    <div class=" bg-[#141318] flex flex-row-2 py-52" >
+    <div class=" bg-[#141318] flex flex-row-2 py-52 justify-start items-start w-full gap-20" >
       <PhotoGallery />
       <div class='h-full w-4/12 text-white'>
         <div class='w-3/4 flex flex-col gap-8 justify-center items-start h-full z-30'>
