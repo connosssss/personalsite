@@ -31,33 +31,33 @@ export default function PhotoGallery() {
         <img 
           src={images[trackrImg[2]]} alt="trackr ss 1" 
           class="absolute h-[450px] w-auto rounded-md shadow-xl transition-all duration-300 
-          transform translate-x-40 rotate-12 "
+          transform translate-x-40 rotate-12 opacity-85"
         />
         
         <img 
           src={images[trackrImg[1]]} alt="trackr ss 2" 
           class="absolute h-[450px] w-auto rounded-md shadow-xl transition-all duration-300 
-          transform translate-x-20 rotate-6 "
+          transform translate-x-20 rotate-6 opacity-85"
         />
 
         <img 
           src={images[trackrImg[0]]} alt="trackr ss 3" 
           class="absolute h-[450px] w-auto rounded-md shadow-xl transition-all duration-300 
-          transform hover:z-10 hover:scale-110"
+          transform hover:z-10 hover:scale-110 "
         />
       </div>
 
-      <div class='flex flex-row gap-4 mt-4'>
+      <div class='flex flex-row gap-4 mt-4 text-white'>
 
         <button 
-          class='w-10 h-5 bg-white/50 rounded hover:bg-white/70 transition-colors' 
+          class='w-10 py-2 bg-[#2A292E] rounded hover:bg-[#313136] transition-colors' 
           onClick={() => changeImg(trackrImg, setTrackrImg, true)}
         >
           ←
         </button>
 
         <button 
-          class='w-10 h-5 bg-white/50 rounded hover:bg-white/70 transition-colors' 
+          class='w-10 py-2 bg-[#2A292E] rounded hover:bg-[#313136] transition-colors' 
           onClick={() => changeImg(trackrImg, setTrackrImg, false)}
         >
           →

@@ -80,9 +80,9 @@ export default function Home() {
     </div>
 
     <div class='h-52 w-full bg-[#905368]  '/>
-    <div class='h-96 w-full bg-gradient-to-b from-[#905368]  to-gray-900  '/>
+    <div class='h-96 w-full bg-gradient-to-b from-[#905368]  to-[#141318]  '/>
     
-    <div class=" bg-gray-900 flex flex-row-2 py-52" >
+    <div class=" bg-[#141318] flex flex-row-2 py-52" >
       <PhotoGallery />
       <div class='h-full w-4/12 text-white'>
         <div class='w-3/4 flex flex-col gap-8 justify-center items-start h-full z-30'>
@@ -103,7 +103,7 @@ export default function Home() {
     </div>
     
 
-    <div class='h-96 w-full bg-gradient-to-b from-gray-900  to-[#d35b5b]  '/>
+    <div class='h-96 w-full bg-gradient-to-b from-[#141318]  to-[#d35b5b]  '/>
     
     <Project 
       title="Clockwise"
