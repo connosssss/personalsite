@@ -37,7 +37,7 @@ export default function PhotoGallery() {
         <img 
           src={images[trackrImg[1]]} alt="trackr ss 2" 
           class="absolute h-[450px] w-auto rounded-md shadow-xl transition-all duration-300 
-          transform translate-x-20 rotate-6 "
+          transform translate-x-20 rotate-6 " />
 
 
         <img 
