@@ -103,20 +103,26 @@ export default function Home() {
     </div>
     
 
-    <div class='h-96 w-full bg-gradient-to-b from-[#141318]  to-[#d35b5b]  '/>
+    <div class='h-96 w-full bg-gradient-to-b from-[#141318]  to-emerald-300  '/>
     
-    <Project 
-      title="Clockwise"
-      description="Clockwise is a shift tracker that tracks pay in real time throughout the shift, 
-      as well as keeping track of past shifts and total earnings. It was built using Fresh by Deno and Tailwind CSS"
-      imageSrc="Clockwise.png"
-      imageAlt="Clockwise screenshot"
-      githubLink="https://github.com/retekant/clockwise"
-      bgColor="#d35b5b"
-      siteLink="https://clockwise.deno.dev"
-    />
+    <div class="h-[500px] bg-gradient-to-b bg-emerald-300 flex flex-row-2 " >
+      <div class='h-full w-8/12 flex items-center justify-center'> 
+      <img src='NextStep.png' alt="nextstep SS" class="h-[500px] w-auto rounded-md shadow-xl"/>
+      </div>
+      <div class='h-full w-4/12 text-white'>
+        <div class='w-3/4 flex flex-col gap-8 justify-center items-start h-full'>
+        <h1 class='text-5xl font-bold'> Next Step </h1>
+        <p class='text-xl'>Next Step uses Machine learning models like linear regression and Random Forest train off of past stock data, test the predictions to past data, and 
+          predict future price movements. It was mainly made as a way to just experiment with machine learning while also using Next JS for the front end and python for the backend.
+        </p>
+          <a href="https://github.com/connosssss/Next-Step" target="_blank" class='' >
+            <img src="/github.svg" alt="GitHub Logo" width="32" height="32" class="invert transition-transform duration-300 hover:scale-125" />
+        </a>
+        </div>
+      </div>
+    </div>
     
-    <div class='h-96 w-full bg-gradient-to-b from-[#d35b5b]  to-slate-700  '/>
+    <div class='h-96 w-full bg-gradient-to-b from-emerald-300  to-slate-700  '/>
 
     <Project 
       title="noteable"
