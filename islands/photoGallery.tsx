@@ -31,14 +31,14 @@ export default function PhotoGallery() {
         <img 
           src={images[trackrImg[2]]} alt="trackr ss 1" 
           class="absolute h-[450px] w-auto rounded-md shadow-xl transition-all duration-300 
-          transform translate-x-40 rotate-12 opacity-85"
+          transform translate-x-40 rotate-12 "
         />
         
         <img 
           src={images[trackrImg[1]]} alt="trackr ss 2" 
           class="absolute h-[450px] w-auto rounded-md shadow-xl transition-all duration-300 
-          transform translate-x-20 rotate-6 opacity-85"
-        />
+          transform translate-x-20 rotate-6 "
+
 
         <img 
           src={images[trackrImg[0]]} alt="trackr ss 3" 
