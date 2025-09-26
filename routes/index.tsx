@@ -7,16 +7,16 @@ import PhotoGallery from "../islands/photoGallery.tsx";
 export default function Home() {
   return (
     <>
-    <div id="top" class="h-screen mx-auto bg-[#7c7dd4] flex flex-col justify-center items-center py-7 gap-6">
+    <div id="top" class="h-screen mx-auto bg-[#4a69bf] flex flex-col justify-center items-center py-7 gap-6">
       <Navbar/>
-      <div class=" text-white bg-[#474885] rounded-lg font-semibold  
+      <div class=" text-white bg-[#355294] rounded-lg font-semibold  
       w-5/12  h-[45%] flex items-center justify-center">
 
         <div class='flex flex-col p-8 gap-5 '>
-        <div class='flex flex-row justify-between gap-4'>
-            <div>
-            <h1 class="font-bold text-6xl">hi</h1>
-            <h3 class="text-3xl">I'm Connor</h3>
+        <div class='flex flex-row justify-between gap-4 items-center'>
+            <div class='w-full h-full flex items-center '>
+            
+            <h3 class="text-6xl">I'm Connor</h3>
           </div>
           <div class=''>
             <div class='h-24 w-24 bg-slate-800 rounded-full inline-block overflow-hidden'>
@@ -30,7 +30,7 @@ export default function Home() {
         <p>An upcoming Computer Science and Engineering Student studying at UCI</p>
         
         </div>
-        <div class='flex flex-row gap-4 w-full items-center'>
+        <div class='flex flex-row gap-4 w-full items-center '>
             <a href="https://github.com/retekant" target="_blank" class='text-white' >
               <img src="/github.svg" alt="GitHub Logo" width="32" height="32" class="invert transition-transform duration-300 hover:scale-125" />
             </a>
@@ -50,7 +50,7 @@ export default function Home() {
 
       </div>
 
-      <Techstack/>
+      <Techstack bgColor="#355294"/>
 
         
         

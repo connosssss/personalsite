@@ -1,7 +1,10 @@
-export default function Techstack() {
+
+
+export default function Techstack({bgColor}) {
   return (
-    <div class=" text-white bg-[#474885] rounded-lg font-semibold p-6 gap-5 w-4/12
-        text-center flex flex-col"> 
+    <div class=" text-white rounded-lg font-semibold p-6 gap-5 w-4/12
+        text-center flex flex-col"
+        style={{backgroundColor: bgColor}}> 
          <h1 class="font-bold text-xl "> Tech Stacks</h1>
         <div class='w-full flex flex-row place-content-evenly justify-items-center text-lg pt-6'>
 
