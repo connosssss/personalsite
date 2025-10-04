@@ -56,7 +56,7 @@ export default function Home() {
         
     </div>
     {/*PROJECTS  */ }
-    <div class='h-[500px] w-full bg-gradient-to-b from-[#7c7dd4]  to-[#708995] ' />
+    <div class='h-[500px] w-full bg-gradient-to-b from-[#4a69bf]  to-[#708995] ' />
 
 
     <div class='h-52 w-full bg-[#708995] text-center text-6xl font-semibold flex justify-center text-white'>
