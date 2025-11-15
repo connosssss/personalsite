@@ -27,11 +27,11 @@ export default function Home() {
         </div>
         
         <div>
-        <p>An upcoming Computer Science and Engineering Student studying at UCI</p>
+          <p>A Computer Science and Engineering Student studying at UCI</p>
         
         </div>
         <div class='flex flex-row gap-4 w-full items-center '>
-            <a href="https://github.com/retekant" target="_blank" class='text-white' >
+            <a href="https://github.com/connosssss" target="_blank" class='text-white' >
               <img src="/github.svg" alt="GitHub Logo" width="32" height="32" class="invert transition-transform duration-300 hover:scale-125" />
             </a>
             <a href="https://www.linkedin.com/in/connor-griffin-a5174724b/" target="_blank" class='text-white' >
@@ -40,7 +40,7 @@ export default function Home() {
             <a href="" target="_blank" class='text-white flex flex-row group gap-4' >
               <img src="maildotru.svg" alt="GitHub Logo" width="32" height="32" class="invert transition-transform duration-300 hover:scale-125" />
               <p class='opacity-0 transform transform-origin-left transition-all
-               duration-300 ease-out group-hover:opacity-100'>retekant@gmail.com</p>
+               duration-300 ease-out group-hover:opacity-100'>connorgriffin2424@gmail.com</p>
             </a>
         </div>
 
@@ -82,7 +82,7 @@ export default function Home() {
     <div class='h-52 w-full bg-[#905368]  '/>
     <div class='h-96 w-full bg-gradient-to-b from-[#905368]  to-[#141318]  '/>
     
-    <div class=" bg-[#141318] flex flex-row-2 py-52 justify-start items-start w-full gap-20" >
+    <div class=" bg-[#141318] flex flex-row-2 py-64 justify-start items-start w-full gap-20" >
       <PhotoGallery />
       <div class='h-full w-4/12 text-white'>
         <div class='w-3/4 flex flex-col gap-8 justify-center items-start h-full z-30'>
@@ -105,7 +105,7 @@ export default function Home() {
 
     <div class='h-96 w-full bg-gradient-to-b from-[#141318]  to-emerald-300  '/>
     
-    <div class="h-[500px] bg-gradient-to-b bg-emerald-300 flex flex-row-2 " >
+    <div class="h-[800px] bg-emerald-300 flex flex-row-2 py-64" >
       <div class='h-full w-8/12 flex items-center justify-center'> 
       <img src='NextStep.png' alt="nextstep SS" class="h-[500px] w-auto rounded-md shadow-xl"/>
       </div>
