@@ -83,7 +83,7 @@ export default function Home() {
     <div class='h-96 w-full bg-gradient-to-b from-[#905368]  to-[#141318]  '/>
     
     <div class=" bg-[#141318] flex flex-row-2 py-64 justify-start items-start w-full gap-20" >
-      <PhotoGallery />
+      <PhotoGallery image1="/trackr1.png" image2="/trackr2.png" image3="/trackr3.png"/>
       <div class='h-full w-4/12 text-white'>
         <div class='w-3/4 flex flex-col gap-8 justify-center items-start h-full z-30'>
         <h1 class='text-5xl font-bold'> trackr </h1>
@@ -102,8 +102,32 @@ export default function Home() {
       </div>
     </div>
     
+    <div class='h-96 w-full bg-gradient-to-b from-[#141318] to-[#273346]    '/>
 
-    <div class='h-96 w-full bg-gradient-to-b from-[#141318]  to-emerald-300  '/>
+    <div class=" bg-[#273346] flex flex-row-2 py-64 justify-start items-start w-full gap-20" >
+      <PhotoGallery image1="/inked1.png" image2="/inked2.png" image3="/inked3.png"/>
+      <div class='h-full w-4/12 text-white'>
+        <div class='w-3/4 flex flex-col gap-8 justify-center items-start h-full z-30'>
+        <h1 class='text-5xl font-bold'> inked </h1>
+        <p class='text-xl z-40'>inked is a site that allows users to make and join lobbies to draw with friends in real time.
+          I mainly made it just to learn more about websockets and multiplayer lobby hosting + creating 
+          It was built using Fresh, Tailwind CSS, and was deployed on Deno Deploy</p>
+          <div class='flex flex-row gap-5'>
+          <a href="https://github.com/retekant/inked" target="_blank" class='' >
+            <img src="/github.svg" alt="GitHub Logo" width="32" height="32" class="invert transition-transform duration-300 hover:scale-125" />
+        </a>
+
+        <a href="https://inked.connosssss.deno.net" target="_blank" class='' >
+              <img src="/link-svgrepo-com.svg" alt="A Link icon" width="32" height="32" class="invert transition-transform duration-300 hover:scale-125" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+   
+ 
+    <div class='h-96 w-full bg-gradient-to-b from-[#273346]  to-emerald-300  '/>
     
     <div class="h-[800px] bg-emerald-300 flex flex-row-2 py-64" >
       <div class='h-full w-8/12 flex items-center justify-center'> 
