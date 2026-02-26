@@ -101,8 +101,27 @@ export default function Home() {
         </div>
       </div>
     </div>
+
+    <div class='h-96 w-full bg-gradient-to-b from-[#141318]  to-[#020617]  '/>
+    <div class='h-52 w-full bg-[#020617]  '/>
     
-    <div class='h-96 w-full bg-gradient-to-b from-[#141318] to-[#273346]    '/>
+    <div class="h-[500px] bg-gradient-to-b from-[#020617]  to-[#020617] flex flex-row-2 " >
+      <div class='h-full w-8/12 flex items-center justify-center'> 
+      <img src='simple.png' alt="simple" class="h-[500px] w-auto rounded-md shadow-xl"/>
+      </div>
+      <div class='h-full w-4/12 text-white'>
+        <div class='w-3/4 flex flex-col gap-8 justify-center items-start h-full'>
+        <h1 class='text-5xl font-bold'> simple </h1>
+        <p class='text-xl'>simple is an electron based browser made to give users customization while also cutting down on ram ussage </p>
+          <a href="https://github.com/retekant/simple" target="_blank" class='' >
+            <img src="/github.svg" alt="GitHub Logo" width="32" height="32" class="invert transition-transform duration-300 hover:scale-125" />
+        </a>
+        </div>
+      </div>
+    </div>
+
+    <div class='h-52 w-full bg-[#020617]  '/>
+    <div class='h-96 w-full bg-gradient-to-b from-[#020617] to-[#273346]    '/>
 
     <div class=" bg-[#273346] flex flex-row-2 py-64 justify-start items-start w-full gap-20" >
       <PhotoGallery image1="/inked1.png" image2="/inked2.png" image3="/inked3.png"/>
@@ -157,6 +176,6 @@ export default function Home() {
       bgColor="#334155"
       siteLink="https://noteable.deno.dev"
     />
-
+  
     </>);
 }
