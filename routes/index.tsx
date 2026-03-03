@@ -7,9 +7,9 @@ import PhotoGallery from "../islands/photoGallery.tsx";
 export default function Home() {
   return (
     <>
-    <div id="top" class="h-screen mx-auto bg-[#4a69bf] flex flex-col justify-center items-center py-7 gap-6">
+    <div id="top" class="h-screen mx-auto bg-[#14161b] flex flex-col justify-center items-center py-7 gap-6">
       <Navbar/>
-      <div class=" text-white bg-[#355294] rounded-lg font-semibold  
+      <div class=" text-white bg-[#0f1015] rounded-lg font-semibold  
       w-5/12  h-[45%] flex items-center justify-center">
 
         <div class='flex flex-col p-8 gap-5 '>
@@ -50,13 +50,13 @@ export default function Home() {
 
       </div>
 
-      <Techstack bgColor="#355294"/>
+            <Techstack bgColor="#0f1015"/>
 
         
         
     </div>
     {/*PROJECTS  */ }
-    <div class='h-[500px] w-full bg-gradient-to-b from-[#4a69bf]  to-[#708995] ' />
+    <div class='h-[500px] w-full bg-gradient-to-b from-[#14161b]  to-[#708995] ' />
 
 
     <div class='h-52 w-full bg-[#708995] text-center text-6xl font-semibold flex justify-center text-white'>
