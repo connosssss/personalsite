@@ -19,10 +19,10 @@ export default function Home() {
             <h3 class="text-6xl">I'm Connor</h3>
           </div>
           <div class=''>
-            <div class='h-24 w-24 bg-slate-800 rounded-full inline-block overflow-hidden'>
-              <img src="/asdf.png"  alt="the react logo"
-            class='w-full h-full object-cover'/>
-            </div>
+           {/* <div class='h-24 w-24 bg-slate-800 rounded-full inline-block overflow-hidden'>
+             <img src="/asdf.png"  alt="the react logo"
+            class='w-full h-full object-cover'/> 
+            </div>*/} 
           </div>
         </div>
         
@@ -107,7 +107,7 @@ export default function Home() {
     
     <div class="h-[500px] bg-gradient-to-b from-[#020617]  to-[#020617] flex flex-row-2 " >
       <div class='h-full w-8/12 flex items-center justify-center'> 
-      <img src='simple.png' alt="simple" class="h-[500px] w-auto rounded-md shadow-xl"/>
+      <img src='simple.png' alt="simple" class="h-[500px] w-auto rounded-md shadow-xl shadow-[#1e293b]"/>
       </div>
       <div class='h-full w-4/12 text-white'>
         <div class='w-3/4 flex flex-col gap-8 justify-center items-start h-full'>
@@ -176,6 +176,35 @@ export default function Home() {
       bgColor="#334155"
       siteLink="https://noteable.deno.dev"
     />
+
+     {/*Recent Hackathons  */ }
+< div class='h-96 w-full bg-gradient-to-b from-slate-700  to-white  '/>
+     <div class='h-52 w-full bg-white text-center text-6xl font-semibold items-center flex justify-center text-white'>
+      <h1  id="hackathons" class="text-gray-950"> Recent Hackathons </h1>
+    </div>
+
+    
+    
+    <div class=" bg-white flex flex-row-2 py-64 justify-start items-start w-full gap-20" >
+      <PhotoGallery image1="/muv1.png" image2="/muv5.png" image3="/muv2.png"/>
+      <div class='h-full w-4/12 text-black-white'>
+        <div class='w-3/4 flex flex-col gap-8 justify-center items-start h-full z-30'>
+        <h1 class='text-5xl font-bold'> Irvine Hacks 2026: muve </h1>
+        <p class='text-xl z-40'>muv was our project built for Irvine Hacks 2026. We made out project around using AI to scan house listing images for 
+          anything that would make it innaccessible based on user's input, with it also taking in contextual data of the surrounding area based on the input as well. At the end 
+          of all of that, it makes a final report that compiles everything and shows where there could be potential problems for the user
+        </p>
+          <div class='flex flex-row gap-5'>
+          <a href="https://github.com/ParzivalPerhaps/muve" target="_blank" class='' >
+            <img src="/github.svg" alt="GitHub Logo" width="32" height="32" class=" transition-transform duration-300 hover:scale-125" />
+        </a>
+        <a href="https://devpost.com/software/muve-frx3n0" target="_blank" class='' >
+              <img src="/link-svgrepo-com.svg" alt="A Link icon" width="32" height="32" class=" transition-transform duration-300 hover:scale-125" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   
     </>);
 }

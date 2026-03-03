@@ -5,6 +5,7 @@ export default function Navbar() {
         <div class="flex flex-row gap-6"> 
           <a href="/#top" class="hover:underline">Home</a>
           <a href="/#projects" class="hover:underline">Projects</a>
+          <a href="/#hackathons" class="hover:underline">Hackathons</a>
         </div>
     </div>
   )
