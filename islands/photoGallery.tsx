@@ -30,19 +30,19 @@ export default function PhotoGallery({image1, image2, image3}) {
       <div class="relative h-[450px] w-[720px] flex items-center justify-center">
         <img 
           src={images[img[2]]}  
-          class="absolute h-[450px] w-auto rounded-md shadow-xl transition-all duration-300 
+          class="absolute h-[450px] w- object-cover rounded-md shadow-xl transition-all duration-300 
           transform translate-x-40 rotate-12 "
         />
         
         <img 
           src={images[img[1]]} 
-          class="absolute h-[450px] w-auto rounded-md shadow-xl transition-all duration-300 
+          class="absolute h-[450px] w-auto object-cover rounded-md shadow-xl transition-all duration-300 
           transform translate-x-20 rotate-6 " />
 
 
         <img 
           src={images[img[0]]} 
-          class="absolute h-[450px] w-auto rounded-md shadow-xl transition-all duration-300 
+          class="absolute h-[450px] w-auto object-cover rounded-md shadow-xl transition-all duration-300 
           transform hover:z-10 hover:scale-110 "
         />
       </div>
