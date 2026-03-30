@@ -177,11 +177,39 @@ export default function Home() {
       siteLink="https://noteable.deno.dev"
     />
 
+
+
+
+
+
+
      {/*Recent Hackathons  */ }
-< div class='h-96 w-full bg-gradient-to-b from-slate-700  to-white  '/>
-     <div class='h-52 w-full bg-white text-center text-6xl font-semibold items-center flex justify-center text-white'>
-      <h1  id="hackathons" class="text-gray-950"> Recent Hackathons </h1>
+< div class='h-96 w-full bg-gradient-to-b from-slate-700  to-[#873A3A]  '/>
+     <div class='h-52 w-full bg-[#873A3A] text-center text-6xl font-semibold items-center flex justify-center text-white'>
+        <h1  id="hackathons" class=""> Recent Hackathons </h1>
     </div>
+
+    <div class=" bg-gradient-to-b from-[#873A3A] to-[#732727] flex flex-row-2 py-64 justify-start items-start w-full gap-20" >
+      <PhotoGallery image1="/chiika1.png" image2="/chiika2.png" image3="/chiika3.png"/>
+      <div class='h-full w-4/12 text-white'>
+        <div class='w-3/4 flex flex-col gap-8 justify-center items-start h-full z-30'>
+        <h1 class='text-5xl font-bold'> UCLA Glitch Gemini Hackathon 2026: chiika </h1>
+        <p class='text-xl z-40'>chiika was my app I made for UCLA Glitch's Gemini Hackathon. I made the project around using Gemini Live to simulate conversations in real time in foreign languages, 
+          lettings users go through conversations more naturally as compared to pre recorded lessons on other language learning apps.
+        </p>
+          <div class='flex flex-row gap-5'>
+          <a href="https://github.com/connosssss/chiika" target="_blank" class='' >
+            <img src="/github.svg" alt="GitHub Logo" width="32" height="32" class=" transition-transform duration-300 hover:scale-125 invert" />
+        </a>
+        <a href="https://chiika.vercel.app/" target="_blank" class='' >
+              <img src="/link-svgrepo-com.svg" alt="A Link icon" width="32" height="32" class=" transition-transform duration-300 hover:scale-125 invert" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    < div class='h-96 w-full bg-gradient-to-b from-[#732727]  to-white  '/>
 
     
     
