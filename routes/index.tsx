@@ -184,10 +184,33 @@ export default function Home() {
 
 
      {/*Recent Hackathons  */ }
-< div class='h-96 w-full bg-gradient-to-b from-slate-700  to-[#873A3A]  '/>
-     <div class='h-52 w-full bg-[#873A3A] text-center text-6xl font-semibold items-center flex justify-center text-white'>
+< div class='h-96 w-full bg-gradient-to-b from-slate-700  to-[#FFF4EC]  '/>
+     <div class='h-52 w-full bg-[#FFF4EC] text-center text-6xl font-semibold items-center flex justify-center text-black/65'>
         <h1  id="hackathons" class=""> Recent Hackathons </h1>
     </div>
+
+    <div class=" bg-[#FFF4EC] bg-seashell flex flex-row-2 py-64 justify-start items-start w-full gap-20" >
+      <PhotoGallery image1="/planilogin.png" image2="/planiplanner.png" image3="/planiassign.png"/>
+      <div class='h-full w-4/12 text-black/65'>
+        <div class='w-3/4 flex flex-col gap-8 justify-center items-start h-full z-30'>
+        <h1 class='text-5xl font-bold'> UCI Commit the Change 2026 Promptathon: plani </h1>
+        <p class='text-xl z-40'> The UCI CTC promptathon was a 2 and a half hour challenge to make an app using tools like Antigravity to make an app in the short timespan. The project I made was plani
+            , which was an app that helped nonprofits schedule volunteers, kept track of the volunteering schedule, and had AI integration to both autocomplete planning for events and for selecting volunteers based off
+            of a variety of factors (including but not limited to hours worked, preferences, and availability ). One of the main features was also being able to take things like email chains or SMS groupchats and create an assignmnet
+            schedule based off of responses in those. 
+        </p>
+          <div class='flex flex-row gap-5'>
+          <a href="https://github.com/connosssss/plani" target="_blank" class='' >
+            <img src="/github.svg" alt="GitHub Logo" width="32" height="32" class=" transition-transform duration-300 hover:scale-125 " />
+        </a>
+       { /*<a href="https://chiika.vercel.app/" target="_blank" class='' >
+              <img src="/link-svgrepo-com.svg" alt="A Link icon" width="32" height="32" class=" transition-transform duration-300 hover:scale-125 invert" />
+            </a>*/}
+          </div>
+        </div>
+      </div>
+    </div>
+     < div class='h-96 w-full bg-gradient-to-b from-[#FFF4EC]  to-[#873A3A]  '/>
 
     <div class=" bg-gradient-to-b from-[#873A3A] to-[#732727] flex flex-row-2 py-64 justify-start items-start w-full gap-20" >
       <PhotoGallery image1="/chiika1.png" image2="/chiika2.png" image3="/chiika3.png"/>
