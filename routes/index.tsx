@@ -102,17 +102,17 @@ export default function Home() {
       </div>
     </div>
 
-    <div class='h-96 w-full bg-gradient-to-b from-[#141318]  to-[#020617]  '/>
-    <div class='h-52 w-full bg-[#020617]  '/>
+    <div class='h-96 w-full bg-gradient-to-b from-[#141318]  to-[#282e4a]  '/>
+    <div class='h-52 w-full bg-[#282e4a]  '/>
     
-    <div class="h-[500px] bg-gradient-to-b from-[#020617]  to-[#020617] flex flex-row-2 " >
+    <div class="h-[500px] bg-gradient-to-b from-[#282e4a]  to-[#282e4a] flex flex-row-2 " >
       <div class='h-full w-8/12 flex items-center justify-center'> 
-      <img src='simple.png' alt="simple" class="h-[500px] w-auto rounded-md shadow-xl shadow-[#1e293b]"/>
+      <img src='simple.png' alt="simple" class="h-[500px] w-auto rounded-md shadow-xl shadow-[#536587]/50"/>
       </div>
       <div class='h-full w-4/12 text-white'>
         <div class='w-3/4 flex flex-col gap-8 justify-center items-start h-full'>
         <h1 class='text-5xl font-bold'> simple </h1>
-        <p class='text-xl'>simple is an electron based browser made to give users customization while also cutting down on ram ussage </p>
+        <p class='text-xl'>simple is an electron based browser made to give users more customization in their browser and tab management while cutting down on active ram usage </p>
           <a href="https://github.com/retekant/simple" target="_blank" class='' >
             <img src="/github.svg" alt="GitHub Logo" width="32" height="32" class="invert transition-transform duration-300 hover:scale-125" />
         </a>
@@ -120,8 +120,8 @@ export default function Home() {
       </div>
     </div>
 
-    <div class='h-52 w-full bg-[#020617]  '/>
-    <div class='h-96 w-full bg-gradient-to-b from-[#020617] to-[#273346]    '/>
+    <div class='h-52 w-full bg-[#282e4a]  '/>
+    <div class='h-96 w-full bg-gradient-to-b from-[#282e4a] to-[#273346]    '/>
 
     <div class=" bg-[#273346] flex flex-row-2 py-64 justify-start items-start w-full gap-20" >
       <PhotoGallery image1="/inked1.png" image2="/inked2.png" image3="/inked3.png"/>
