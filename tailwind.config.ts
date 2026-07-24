@@ -2,6 +2,7 @@ import { type Config } from "tailwindcss";
 
 export default {
   content: [
-    "{routes,islands,components}/**/*.{ts,tsx,js,jsx}",
+    "./app/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
   ],
 } satisfies Config;

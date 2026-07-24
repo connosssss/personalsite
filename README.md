@@ -1,3 +1,12 @@
-A portfolio and personal site made using deno and tailwind css. Right now all it really does is show some past projects but more will be added in the future
+# Connor Griffin's Portfolio
 
-### [Link To Site](https://connorgdev.connosssss.deno.net/)
+A Next.js and Tailwind CSS portfolio featuring projects and hackathon work.
+
+## Development
+
+```bash
+npm install
+npm run dev
+```
+
+Build the production site with `npm run build`.

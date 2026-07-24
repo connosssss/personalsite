@@ -5,7 +5,7 @@
 .env.production.local
 .env.local
 
-# Fresh build directory
-_fresh/
+# Next.js build directory
+.next/
 # npm dependencies
 node_modules/
