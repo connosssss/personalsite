@@ -2,7 +2,10 @@
   "builds": [
     {
       "src": "api/index.ts",
-      "use": "vercel-deno"
+      "use": "vercel-deno",
+      "config": {
+        "includeFiles": ["_fresh/**", "static/**"]
+      }
     }
   ],
   "routes": [
