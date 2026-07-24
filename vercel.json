@@ -4,7 +4,7 @@
       "src": "api/index.ts",
       "use": "vercel-deno",
       "config": {
-        "includeFiles": ["_fresh/**", "static/**"]
+        "includeFiles": ["_fresh/**", "static/**", "components/**", "islands/**", "routes/**"]
       }
     }
   ],
