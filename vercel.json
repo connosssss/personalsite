@@ -1,9 +1,10 @@
 {
-  "functions": {
-    "api/index.ts": {
-      "runtime": "vercel-deno"
+  "builds": [
+    {
+      "src": "api/index.ts",
+      "use": "vercel-deno"
     }
-  },
+  ],
   "routes": [
     {
       "src": "/(.*)",
