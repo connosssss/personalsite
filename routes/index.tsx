@@ -7,9 +7,9 @@ import PhotoGallery from "../islands/photoGallery.tsx";
 export default function Home() {
   return (
     <>
-    <div id="top" class="h-screen mx-auto bg-[#4a69bf] flex flex-col justify-center items-center py-7 gap-6">
+    <div id="top" class="h-screen mx-auto bg-[#14161b] flex flex-col justify-center items-center py-7 gap-6">
       <Navbar/>
-      <div class=" text-white bg-[#355294] rounded-lg font-semibold  
+      <div class=" text-white bg-[#0f1015] rounded-lg font-semibold  
       w-5/12  h-[45%] flex items-center justify-center">
 
         <div class='flex flex-col p-8 gap-5 '>
@@ -19,19 +19,19 @@ export default function Home() {
             <h3 class="text-6xl">I'm Connor</h3>
           </div>
           <div class=''>
-            <div class='h-24 w-24 bg-slate-800 rounded-full inline-block overflow-hidden'>
-              <img src="/asdf.png"  alt="the react logo"
-            class='w-full h-full object-cover'/>
-            </div>
+           {/* <div class='h-24 w-24 bg-slate-800 rounded-full inline-block overflow-hidden'>
+             <img src="/asdf.png"  alt="the react logo"
+            class='w-full h-full object-cover'/> 
+            </div>*/} 
           </div>
         </div>
         
         <div>
-        <p>An upcoming Computer Science and Engineering Student studying at UCI</p>
+          <p>A Computer Science and Engineering Student studying at UCI</p>
         
         </div>
         <div class='flex flex-row gap-4 w-full items-center '>
-            <a href="https://github.com/retekant" target="_blank" class='text-white' >
+            <a href="https://github.com/connosssss" target="_blank" class='text-white' >
               <img src="/github.svg" alt="GitHub Logo" width="32" height="32" class="invert transition-transform duration-300 hover:scale-125" />
             </a>
             <a href="https://www.linkedin.com/in/connor-griffin-a5174724b/" target="_blank" class='text-white' >
@@ -40,7 +40,7 @@ export default function Home() {
             <a href="" target="_blank" class='text-white flex flex-row group gap-4' >
               <img src="maildotru.svg" alt="GitHub Logo" width="32" height="32" class="invert transition-transform duration-300 hover:scale-125" />
               <p class='opacity-0 transform transform-origin-left transition-all
-               duration-300 ease-out group-hover:opacity-100'>retekant@gmail.com</p>
+               duration-300 ease-out group-hover:opacity-100'>connorgriffin2424@gmail.com</p>
             </a>
         </div>
 
@@ -50,13 +50,13 @@ export default function Home() {
 
       </div>
 
-      <Techstack bgColor="#355294"/>
+            <Techstack bgColor="#0f1015"/>
 
         
         
     </div>
     {/*PROJECTS  */ }
-    <div class='h-[500px] w-full bg-gradient-to-b from-[#4a69bf]  to-[#708995] ' />
+    <div class='h-[500px] w-full bg-gradient-to-b from-[#14161b]  to-[#708995] ' />
 
 
     <div class='h-52 w-full bg-[#708995] text-center text-6xl font-semibold flex justify-center text-white'>
@@ -82,8 +82,8 @@ export default function Home() {
     <div class='h-52 w-full bg-[#905368]  '/>
     <div class='h-96 w-full bg-gradient-to-b from-[#905368]  to-[#141318]  '/>
     
-    <div class=" bg-[#141318] flex flex-row-2 py-52 justify-start items-start w-full gap-20" >
-      <PhotoGallery />
+    <div class=" bg-[#141318] flex flex-row-2 py-64 justify-start items-start w-full gap-20" >
+      <PhotoGallery image1="/trackr1.png" image2="/trackr2.png" image3="/trackr3.png"/>
       <div class='h-full w-4/12 text-white'>
         <div class='w-3/4 flex flex-col gap-8 justify-center items-start h-full z-30'>
         <h1 class='text-5xl font-bold'> trackr </h1>
@@ -101,11 +101,54 @@ export default function Home() {
         </div>
       </div>
     </div>
-    
 
-    <div class='h-96 w-full bg-gradient-to-b from-[#141318]  to-emerald-300  '/>
+    <div class='h-96 w-full bg-gradient-to-b from-[#141318]  to-[#282e4a]  '/>
+    <div class='h-52 w-full bg-[#282e4a]  '/>
     
-    <div class="h-[500px] bg-gradient-to-b bg-emerald-300 flex flex-row-2 " >
+    <div class="h-[500px] bg-gradient-to-b from-[#282e4a]  to-[#282e4a] flex flex-row-2 " >
+      <div class='h-full w-8/12 flex items-center justify-center'> 
+      <img src='simple.png' alt="simple" class="h-[500px] w-auto rounded-md shadow-xl shadow-[#536587]/50"/>
+      </div>
+      <div class='h-full w-4/12 text-white'>
+        <div class='w-3/4 flex flex-col gap-8 justify-center items-start h-full'>
+        <h1 class='text-5xl font-bold'> simple </h1>
+        <p class='text-xl'>simple is an electron based browser made to give users more customization in their browser and tab management while cutting down on active ram usage </p>
+          <a href="https://github.com/retekant/simple" target="_blank" class='' >
+            <img src="/github.svg" alt="GitHub Logo" width="32" height="32" class="invert transition-transform duration-300 hover:scale-125" />
+        </a>
+        </div>
+      </div>
+    </div>
+
+    <div class='h-52 w-full bg-[#282e4a]  '/>
+    <div class='h-96 w-full bg-gradient-to-b from-[#282e4a] to-[#273346]    '/>
+
+    <div class=" bg-[#273346] flex flex-row-2 py-64 justify-start items-start w-full gap-20" >
+      <PhotoGallery image1="/inked1.png" image2="/inked2.png" image3="/inked3.png"/>
+      <div class='h-full w-4/12 text-white'>
+        <div class='w-3/4 flex flex-col gap-8 justify-center items-start h-full z-30'>
+        <h1 class='text-5xl font-bold'> inked </h1>
+        <p class='text-xl z-40'>inked is a site that allows users to make and join lobbies to draw with friends in real time.
+          I mainly made it just to learn more about websockets and multiplayer lobby hosting + creating 
+          It was built using Fresh, Tailwind CSS, and was deployed on Deno Deploy</p>
+          <div class='flex flex-row gap-5'>
+          <a href="https://github.com/retekant/inked" target="_blank" class='' >
+            <img src="/github.svg" alt="GitHub Logo" width="32" height="32" class="invert transition-transform duration-300 hover:scale-125" />
+        </a>
+
+        <a href="https://inked.connosssss.deno.net" target="_blank" class='' >
+              <img src="/link-svgrepo-com.svg" alt="A Link icon" width="32" height="32" class="invert transition-transform duration-300 hover:scale-125" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+   
+ 
+    <div class='h-96 w-full bg-gradient-to-b from-[#273346]  to-emerald-300  '/>
+    
+    <div class="h-[800px] bg-emerald-300 flex flex-row-2 py-64" >
       <div class='h-full w-8/12 flex items-center justify-center'> 
       <img src='NextStep.png' alt="nextstep SS" class="h-[500px] w-auto rounded-md shadow-xl"/>
       </div>
@@ -134,5 +177,85 @@ export default function Home() {
       siteLink="https://noteable.deno.dev"
     />
 
+
+
+
+
+
+
+     {/*Recent Hackathons  */ }
+< div class='h-96 w-full bg-gradient-to-b from-slate-700  to-[#FFF4EC]  '/>
+     <div class='h-52 w-full bg-[#FFF4EC] text-center text-6xl font-semibold items-center flex justify-center text-black/65'>
+        <h1  id="hackathons" class=""> Recent Hackathons </h1>
+    </div>
+
+    <div class=" bg-[#FFF4EC] bg-seashell flex flex-row-2 py-64 justify-start items-start w-full gap-20" >
+      <PhotoGallery image1="/planilogin.png" image2="/planiplanner.png" image3="/planiassign.png"/>
+      <div class='h-full w-4/12 text-black/65'>
+        <div class='w-3/4 flex flex-col gap-8 justify-center items-start h-full z-30'>
+        <h1 class='text-5xl font-bold'> UCI Commit the Change 2026 Promptathon: plani </h1>
+        <p class='text-xl z-40'> The UCI CTC promptathon was a 2 and a half hour challenge to make an app using tools like Antigravity to make an app in the short timespan. The project I made was plani
+            , which was an app that helped nonprofits schedule volunteers, kept track of the volunteering schedule, and had AI integration to both autocomplete planning for events and for selecting volunteers based off
+            of a variety of factors (including but not limited to hours worked, preferences, and availability ). One of the main features was also being able to take things like email chains or SMS groupchats and create an assignmnet
+            schedule based off of responses in those. 
+        </p>
+          <div class='flex flex-row gap-5'>
+          <a href="https://github.com/connosssss/plani" target="_blank" class='' >
+            <img src="/github.svg" alt="GitHub Logo" width="32" height="32" class=" transition-transform duration-300 hover:scale-125 " />
+        </a>
+       { /*<a href="https://chiika.vercel.app/" target="_blank" class='' >
+              <img src="/link-svgrepo-com.svg" alt="A Link icon" width="32" height="32" class=" transition-transform duration-300 hover:scale-125 invert" />
+            </a>*/}
+          </div>
+        </div>
+      </div>
+    </div>
+     < div class='h-96 w-full bg-gradient-to-b from-[#FFF4EC]  to-[#873A3A]  '/>
+
+    <div class=" bg-gradient-to-b from-[#873A3A] to-[#732727] flex flex-row-2 py-64 justify-start items-start w-full gap-20" >
+      <PhotoGallery image1="/chiika1.png" image2="/chiika2.png" image3="/chiika3.png"/>
+      <div class='h-full w-4/12 text-white'>
+        <div class='w-3/4 flex flex-col gap-8 justify-center items-start h-full z-30'>
+        <h1 class='text-5xl font-bold'> UCLA Glitch Gemini Hackathon 2026: chiika </h1>
+        <p class='text-xl z-40'>chiika was my app I made for UCLA Glitch's Gemini Hackathon. I made the project around using Gemini Live to simulate conversations in real time in foreign languages, 
+          lettings users go through conversations more naturally as compared to pre recorded lessons on other language learning apps.
+        </p>
+          <div class='flex flex-row gap-5'>
+          <a href="https://github.com/connosssss/chiika" target="_blank" class='' >
+            <img src="/github.svg" alt="GitHub Logo" width="32" height="32" class=" transition-transform duration-300 hover:scale-125 invert" />
+        </a>
+        <a href="https://chiika.vercel.app/" target="_blank" class='' >
+              <img src="/link-svgrepo-com.svg" alt="A Link icon" width="32" height="32" class=" transition-transform duration-300 hover:scale-125 invert" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    < div class='h-96 w-full bg-gradient-to-b from-[#732727]  to-white  '/>
+
+    
+    
+    <div class=" bg-white flex flex-row-2 py-64 justify-start items-start w-full gap-20" >
+      <PhotoGallery image1="/muv1.png" image2="/muv5.png" image3="/muv2.png"/>
+      <div class='h-full w-4/12 text-black-white'>
+        <div class='w-3/4 flex flex-col gap-8 justify-center items-start h-full z-30'>
+        <h1 class='text-5xl font-bold'> Irvine Hacks 2026: muve </h1>
+        <p class='text-xl z-40'>muv was our project built for Irvine Hacks 2026. We made out project around using AI to scan house listing images for 
+          anything that would make it innaccessible based on user's input, with it also taking in contextual data of the surrounding area based on the input as well. At the end 
+          of all of that, it makes a final report that compiles everything and shows where there could be potential problems for the user
+        </p>
+          <div class='flex flex-row gap-5'>
+          <a href="https://github.com/ParzivalPerhaps/muve" target="_blank" class='' >
+            <img src="/github.svg" alt="GitHub Logo" width="32" height="32" class=" transition-transform duration-300 hover:scale-125" />
+        </a>
+        <a href="https://devpost.com/software/muve-frx3n0" target="_blank" class='' >
+              <img src="/link-svgrepo-com.svg" alt="A Link icon" width="32" height="32" class=" transition-transform duration-300 hover:scale-125" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
     </>);
 }

@@ -36,7 +36,7 @@ export default function Techstack({bgColor}) {
                 Next JS
                 </div>
             <img src="/nextjs-icon-svgrepo-com.svg" width="48" height="48" alt="the Next JS"
-            class='rounded-sm hover:scale-125 transition-transfrom duration-300'/>
+            class='rounded-sm hover:scale-125 transition-transfrom duration-300 invert'/>
             
             </li>
             
@@ -46,7 +46,7 @@ export default function Techstack({bgColor}) {
                 Express JS
                 </div>
             <img src="/Express.svg" width="48" height="48" alt="the typescript logo"
-            class=' hover:scale-125 transition-transfrom duration-300'/>
+            class=' hover:scale-125 transition-transfrom duration-300 invert'/>
             
             </li>
 
