@@ -138,6 +138,8 @@ function createNoise3D() {
 interface Point {
   x: number;
   y: number;
+  noiseX: number; // Pre-computed x / SCALE
+  noiseY: number; // Pre-computed y / SCALE
   opacity: number;
 }
 
@@ -154,33 +156,36 @@ export default function ArtDots({ fadeHeight = 384 }: { fadeHeight?: number }) {
     if (!ctx) return;
 
     const SCALE = 200;
+    const INV_SCALE = 1 / SCALE;
     const LENGTH = 5;
-    const SPACING = 15;
+    const SPACING = 24;
 
     const noise3d = createNoise3D();
 
-    const existingPoints = new Set<string>();
+    const existingPoints = new Set<number>();
     const points: Point[] = [];
 
     let width = 0;
     let height = 0;
     let dpr = 1;
+    let isVisible = true;
+
+    // Pack two 16-bit coordinates into one 32-bit integer for fast dedup
+    function packCoord(x: number, y: number): number {
+      return ((x + 32768) << 16) | ((y + 32768) & 0xffff);
+    }
 
     function addPoints(w: number, h: number) {
       for (let x = -SPACING / 2; x < w + SPACING; x += SPACING) {
         for (let y = -SPACING / 2; y < h + SPACING; y += SPACING) {
-          const id = `${x}-${y}`;
+          const id = packCoord(x, y);
           if (existingPoints.has(id)) continue;
           existingPoints.add(id);
 
           const opacity = Math.random() * 0.5 + 0.5;
-          points.push({ x, y, opacity });
+          points.push({ x, y, noiseX: x * INV_SCALE, noiseY: y * INV_SCALE, opacity });
         }
       }
-    }
-
-    function getForceOnPoint(x: number, y: number, z: number) {
-      return (noise3d(x / SCALE, y / SCALE, z) - 0.5) * 2 * Math.PI;
     }
 
     function updateSize() {
@@ -206,9 +211,12 @@ export default function ArtDots({ fadeHeight = 384 }: { fadeHeight?: number }) {
     const bucketX: number[][] = Array.from({ length: NUM_BUCKETS }, () => []);
     const bucketY: number[][] = Array.from({ length: NUM_BUCKETS }, () => []);
 
-    function render() {
-      if (!ctx) return;
-      const t = Date.now() / 10000;
+    function render(timestamp: number) {
+      animationFrameId = requestAnimationFrame(render);
+
+      if (!ctx || !isVisible) return;
+
+      const t = timestamp * 0.0001; // Equivalent to Date.now() / 10000
 
       ctx.save();
       ctx.scale(dpr, dpr);
@@ -219,25 +227,29 @@ export default function ArtDots({ fadeHeight = 384 }: { fadeHeight?: number }) {
         bucketY[b].length = 0;
       }
 
+      const bottomFadeStart = height - fadeHeight;
+      const invFadeHeight = fadeHeight > 0 ? 1 / fadeHeight : 0;
+      const t2 = t * 2;
+
       for (let i = 0; i < points.length; i++) {
         const p = points[i];
         if (p.x > width + SPACING || p.y > height + SPACING) continue;
 
-        const { x, y, opacity } = p;
-        const rad = getForceOnPoint(x, y, t);
-        const len = (noise3d(x / SCALE, y / SCALE, t * 2) + 0.5) * LENGTH;
+        const { x, y, noiseX, noiseY, opacity } = p;
+        const rad = (noise3d(noiseX, noiseY, t) - 0.5) * 2 * Math.PI;
+        const len = (noise3d(noiseX, noiseY, t2) + 0.5) * LENGTH;
         const nx = x + Math.cos(rad) * len;
         const ny = y + Math.sin(rad) * len;
 
         // Smooth fade out over fadeHeight as it approaches the bottom
         let fade = 1;
-        if (fadeHeight > 0 && ny > height - fadeHeight) {
-          fade = Math.max(0, Math.min(1, (height - ny) / fadeHeight));
+        if (fadeHeight > 0 && ny > bottomFadeStart) {
+          fade = Math.max(0, (height - ny) * invFadeHeight);
+          if (fade <= 0.005) continue;
         }
-        if (fade <= 0.005) continue;
 
         const alpha = (Math.abs(Math.cos(rad)) * 0.8 + 0.2) * opacity * fade;
-        const b = Math.min(NUM_BUCKETS - 1, Math.max(0, Math.floor(alpha * NUM_BUCKETS)));
+        const b = Math.min(NUM_BUCKETS - 1, Math.max(0, (alpha * NUM_BUCKETS) | 0));
 
         bucketX[b].push(nx);
         bucketY[b].push(ny);
@@ -249,7 +261,7 @@ export default function ArtDots({ fadeHeight = 384 }: { fadeHeight?: number }) {
         const ys = bucketY[b];
 
         // Soft, elegant dot visibility on the dark background
-        const alpha = ((b + 0.5) / NUM_BUCKETS) * 0.4;
+        const alpha = ((b + 0.5) / NUM_BUCKETS) * 0.22;
         ctx.fillStyle = `rgba(200, 215, 235, ${alpha.toFixed(3)})`;
 
         ctx.beginPath();
@@ -261,10 +273,20 @@ export default function ArtDots({ fadeHeight = 384 }: { fadeHeight?: number }) {
       }
 
       ctx.restore();
-      animationFrameId = requestAnimationFrame(render);
     }
 
     animationFrameId = requestAnimationFrame(render);
+
+    // Pause animation when the section is scrolled out of view
+    const intersectionObserver = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          isVisible = entry.isIntersecting;
+        }
+      },
+      { threshold: 0 }
+    );
+    intersectionObserver.observe(container);
 
     const resizeObserver = new ResizeObserver(() => {
       updateSize();
@@ -274,6 +296,7 @@ export default function ArtDots({ fadeHeight = 384 }: { fadeHeight?: number }) {
     return () => {
       cancelAnimationFrame(animationFrameId);
       resizeObserver.disconnect();
+      intersectionObserver.disconnect();
     };
   }, [fadeHeight]);
 
@@ -293,7 +316,7 @@ export default function ArtDots({ fadeHeight = 384 }: { fadeHeight?: number }) {
       }}
       aria-hidden="true"
     >
-      <canvas ref={canvasRef} className="block w-full h-full" />
+      <canvas ref={canvasRef} className="block w-full h-full" style={{ willChange: "contents" }} />
     </div>
   );
 }
