@@ -131,7 +131,7 @@ function Gradient({ from, to }: { from: string; to: string }) {
 function ProjectSection({ project }: { project: Project }) {
   const dark = project.dark ?? false;
   return (
-    <article className={dark ? "text-white" : "text-slate-950"} style={{ background: project.gradientTo ? `linear-gradient(to bottom, ${project.color}, ${project.gradientTo})` : project.color }}>
+    <article className={dark ? "text-white h-screen" : "text-slate-950 h-screen"} style={{ background: project.gradientTo ? `linear-gradient(to bottom, ${project.color}, ${project.gradientTo})` : project.color }}>
       <div className={`mx-auto grid max-w-7xl items-center gap-12 px-6 py-20 lg:grid-cols-[2fr_1fr] ${project.gallery ? "min-h-[50rem]" : "min-h-[32rem]"}`}>
         {project.gallery ? (
           <PhotoGallery images={project.images} alt={`${project.title} screenshot`} />
@@ -160,32 +160,40 @@ export default function Home() {
       </nav>
 
       <section id="top" className="relative overflow-hidden bg-[#14161b] text-white">
-        <div className="flex min-h-screen flex-col items-center justify-center gap-8 px-6 py-24">
-          <div className="relative z-10 w-full max-w-2xl rounded-lg bg-[#0f1015] p-8 shadow-2xl sm:p-12">
-            <h1 className="text-5xl font-semibold sm:text-6xl">I&apos;m Connor</h1>
-            <p className="mt-6 text-lg">A Computer Science and Engineering student studying at UCI.</p>
-            <div className="mt-8 flex items-center gap-5">
+
+
+        <div className="flex min-h-screen flex-col items-center justify-center gap-2 px-6 py-24">
+
+
+          
+
+            <h1 className="text-5xl font-semibold sm:text-6xl text-center">Hi, I'm Connor</h1>
+            <p className="text-lg">A Full Stack Engineer studying Computer Science and Engineering at UCI</p>
+
+            <div className="mt-2 flex items-center gap-5">
               <a href="https://github.com/connosssss" target="_blank" rel="noreferrer" aria-label="GitHub">
                 <img src="/github.svg" alt="" width="32" height="32" className="invert transition hover:scale-125" />
               </a>
-              <a href="https://www.linkedin.com/in/connor-griffin-a5174724b/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+             {/* <a href="https://www.linkedin.com/in/connor-griffin-a5174724b/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
                 <img src="/iconmonstr-linkedin-3.svg" alt="" width="32" height="32" className="invert transition hover:scale-125" />
-              </a>
+              </a>*/ }
               <a href="mailto:connorgriffin2424@gmail.com" aria-label="Email Connor" className="group flex items-center gap-3">
                 <img src="/maildotru.svg" alt="" width="32" height="32" className="invert transition group-hover:scale-125" />
                 <span className="max-w-0 overflow-hidden whitespace-nowrap text-sm opacity-0 transition-all duration-300 group-hover:max-w-64 group-hover:opacity-100 group-focus-within:max-w-64 group-focus-within:opacity-100">connorgriffin2424@gmail.com</span>
               </a>
             </div>
-          </div>
+          
 
-          <div className="relative z-10 w-full max-w-xl rounded-lg bg-[#0f1015] p-6 text-center">
+         {/* <div className="relative z-10 w-full max-w-xl rounded-lg bg-[#0f1015] p-6 text-center">
             <h2 className="font-bold">Tech Stacks</h2>
             <div className="mt-5 flex items-center justify-around gap-3">
               {[{ logo: "logo.svg", invert: false }, { logo: "react-javascript-js-framework-facebook-svgrepo-com.svg", invert: false }, { logo: "nextjs-icon-svgrepo-com.svg", invert: true }, { logo: "Express.svg", invert: true }, { logo: "nodejs-icon-svgrepo-com.svg", invert: false }, { logo: "tailwindcss.svg", invert: true }].map(({ logo, invert }) => (
                 <img key={logo} src={`/${logo}`} alt="" width="42" height="42" className={`max-w-10 transition hover:scale-125 ${invert ? "invert" : ""}`} />
               ))}
             </div>
-          </div>
+          </div> */ }
+
+
         </div>
 
         <Gradient from="#14161b" to="#708995" />

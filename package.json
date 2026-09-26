@@ -21,5 +21,17 @@
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.16",
     "typescript": "^5.9.3"
-  }
+  },
+  "description": "A Next.js and Tailwind CSS portfolio featuring projects and hackathon work.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/connosssss/personalsite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/connosssss/personalsite/issues"
+  },
+  "homepage": "https://github.com/connosssss/personalsite#readme"
 }
