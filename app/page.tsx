@@ -131,8 +131,15 @@ function Gradient({ from, to }: { from: string; to: string }) {
 function ProjectSection({ project }: { project: Project }) {
   const dark = project.dark ?? false;
   return (
-    <article className={dark ? "text-white h-screen" : "text-slate-950 h-screen"} style={{ background: project.gradientTo ? `linear-gradient(to bottom, ${project.color}, ${project.gradientTo})` : project.color }}>
-      <div className={`mx-auto grid max-w-7xl items-center gap-12 px-6 py-20 lg:grid-cols-[2fr_1fr] ${project.gallery ? "min-h-[50rem]" : "min-h-[32rem]"}`}>
+    <article
+      className={`flex min-h-screen items-center justify-center ${dark ? "text-white" : "text-slate-950"}`}
+      style={{
+        background: project.gradientTo
+          ? `linear-gradient(to bottom, ${project.color}, ${project.gradientTo})`
+          : project.color,
+      }}
+    >
+      <div className="mx-auto grid w-full max-w-7xl items-center gap-12 px-6 py-20 lg:grid-cols-[2fr_1fr]">
         {project.gallery ? (
           <PhotoGallery images={project.images} alt={`${project.title} screenshot`} />
         ) : (
