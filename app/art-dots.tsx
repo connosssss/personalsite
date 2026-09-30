@@ -170,7 +170,9 @@ export default function ArtDots({ fadeHeight = 384 }: { fadeHeight?: number }) {
     let dpr = 1;
     let isVisible = true;
 
-    // Pack two 16-bit coordinates into one 32-bit integer for fast dedup
+  
+
+    
     function packCoord(x: number, y: number): number {
       return ((x + 32768) << 16) | ((y + 32768) & 0xffff);
     }
@@ -182,7 +184,7 @@ export default function ArtDots({ fadeHeight = 384 }: { fadeHeight?: number }) {
           if (existingPoints.has(id)) continue;
           existingPoints.add(id);
 
-          const opacity = Math.random() * 0.5 + 0.5;
+          const opacity = Math.random() * 0.45 + 0.6;
           points.push({ x, y, noiseX: x * INV_SCALE, noiseY: y * INV_SCALE, opacity });
         }
       }
@@ -216,7 +218,7 @@ export default function ArtDots({ fadeHeight = 384 }: { fadeHeight?: number }) {
 
       if (!ctx || !isVisible) return;
 
-      const t = timestamp * 0.0001; // Equivalent to Date.now() / 10000
+      const t = timestamp * 0.0001; 
 
       ctx.save();
       ctx.scale(dpr, dpr);
@@ -261,7 +263,7 @@ export default function ArtDots({ fadeHeight = 384 }: { fadeHeight?: number }) {
         const ys = bucketY[b];
 
         // Soft, elegant dot visibility on the dark background
-        const alpha = ((b + 0.5) / NUM_BUCKETS) * 0.22;
+        const alpha = ((b + 0.5) / NUM_BUCKETS) * 0.32;
         ctx.fillStyle = `rgba(200, 215, 235, ${alpha.toFixed(3)})`;
 
         ctx.beginPath();
