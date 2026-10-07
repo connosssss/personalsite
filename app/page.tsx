@@ -35,7 +35,7 @@ const projects: Project[] = [
   },
   {
     title: "simple",
-    description: "An Electron-based browser focused on customization, tab management, and lower active RAM use.",
+    description: "An Electron-based browser focused on customization, tab management, and lower active RAM use. Currently working on rewriting using the firefox source as a base.",
     images: ["/simple.png"],
     github: "https://github.com/connosssss/simple",
     color: "#282e4a",
